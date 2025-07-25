@@ -70,6 +70,38 @@ section h3 {
   color: #0066cc;
 }
 
+/* Participants section inside activity card */
+.activity-participants {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.activity-participants-title {
+  font-size: 15px;
+  color: #3949ab;
+  margin-bottom: 8px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.activity-participants-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.activity-participant {
+  margin-bottom: 4px;
+  font-size: 15px;
+  color: #333;
+  background: #e3eafc;
+  border-radius: 3px;
+  padding: 3px 8px;
+  display: inline-block;
+}
+
 .activity-card p {
   margin-bottom: 8px;
 }

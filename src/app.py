@@ -49,8 +49,7 @@ def root():
 
 @app.get("/activities")
 def get_activities():
-    return activities
-    # Add more activities
+    # Ensure all activities are included before returning
     activities.update({
         "Basketball Team": {
             "description": "Join the school basketball team and compete in local leagues",
@@ -89,6 +88,8 @@ def get_activities():
             "participants": []
         }
     })
+    return activities
+
 
 @app.post("/activities/{activity_name}/signup")
 def signup_for_activity(activity_name: str, email: str):
